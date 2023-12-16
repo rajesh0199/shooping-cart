@@ -1,0 +1,69 @@
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #4a5759;
+    color: white;
+    padding: 20px 60px;
+}
+.header_cart{
+    position: relative;
+    background-color: white;
+    color: black;
+    padding: 2px;
+    font-size: 30px;
+    border-radius: 5px;
+}
+.cart_amount{
+    background-color: #d8f3dc;
+    color: red;
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.cartitem_box{
+    margin-top: 10px;
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-around;
+    gap: 5px 5px;
+}
+@media screen and (max-width:1000px) {
+    .cartitem_box{
+        grid-template-columns: auto auto ;
+    }
+}
+@media screen and (max-width:500px) {
+    .cartitem_box{
+        grid-template-columns: auto;
+    }
+}
+.box{
+    width: 300px;
+    height: 550px;
+    background-color: #b7e4c7;
+}
+.shirt_details{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  
+}
+.shirt_price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.shirt_quantity{
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    gap: 10px;
+}
+
+
